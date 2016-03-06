@@ -1,0 +1,204 @@
+h1 {
+    font-family: Helvetica;
+    font-weight: 100;
+}
+body {
+    color:#333;
+    float:left;
+    font: 15px/20px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+.adding {
+    position: absolute;
+    margin-left: 310px;
+    top: 8.4px;
+    width: 70px;
+    height: 40px;
+    border-width: 0px 0px 3px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    font-weight: 600;
+    font-size: 15px;
+	  border-color: #326E99;
+		background-color: #021846;
+}
+.deleting {
+    position: absolute;
+    margin-left: 310px;
+    top: 53px;
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+	  border-width: 0px 0px 3px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    font-weight: 600;
+    border-color: #3AC162;
+    background-color: #5FCF80;
+}
+.showing {
+    position: absolute;
+    margin-left: 310px;
+    top: 98px;
+    width: 70px;
+    height: 40px;
+    border-width: 0px 0px 3px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #C6CCD2;
+    border-color: #AAB3BB;
+}
+.changing {
+	  display:none;
+    position: absolute;
+    margin-left: 310px;
+    top: 188px;
+    width: 88px;
+    height: 40px;
+    border-width: 0px 0px 3px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #ED5A5A !important;
+    border-color: #EA4343 !important;
+}
+.changing2 {
+	  display:none;
+    position: absolute;
+    margin-left: 310px;
+    top: 188px;
+    left: 100px;
+    width: 88px;
+    height: 40px;
+    border-width: 0px 0px 3px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #ED5A5A !important;
+    border-color: #EA4343 !important;
+}
+.instruct {
+		border-width: 0px 0px 3px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #45464A !important;
+    border-color: #000000 !important;
+	  position: absolute;
+    width: 90px;
+    height: 40px;
+		margin-left: 310px;
+    top: 264px;
+}
+.change {
+    position: absolute;
+    margin-left: 310px;
+    top: 143px;
+    width: 180px;
+    height: 40px;
+    border-width: 0px 0px 3px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #ED5A5A !important;
+    border-color: #EA4343 !important;
+}
+#datepicker {
+    font-size: 16px;
+}
+#opener {
+	  background-color: #3498DB;
+	  text-shadow: 0px -2px #2980B9;
+}
+#opener2 {
+    border-color: #3AC162;
+    background-color: #5FCF80;
+}
+.ui-widget-header {
+    border: 1px solid #aed0ea;
+    background: #deedf7;
+    color: #222222;
+    font-weight: bold;
+	  font-size: 16px;
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center;
+    font-size: 16px;
+}
+ .ui-widget button {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+    margin-top: 10px;
+}
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    font-size: 16px;
+}
+.ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d3;
+    background: #e6e6e6 ;
+    font-weight: normal;
+    color: #555555;
+}
+	.col-md-4 {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+		display: none;
+}

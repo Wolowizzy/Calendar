@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Load jQuery from Google's CDN -->
+  <!-- Load jQuery UI CSS  -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+  <!-- Load jQuery JS -->
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <!-- Load jQuery UI Main JS  -->
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <!--<script src="js/timepicker-addon.js"></script>
+    
+    <!-- Load SCRIPT.JS which will create datepicker for input field  -->
+  <script src="js/script.js"></script>
+  <script src="js/jquery-ui.multidatespicker.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <!--<link rel="stylesheet" href="css/timepicker-addon.css" /> -->
+  <script>
+    $(function() {
+      $("#dialog").dialog({
+        autoOpen: false
+      });
+      $("#opener").click(function() {
+        $("#dialog").dialog().dialog("open");
+      });
+      $("#dialog2").dialog({
+        autoOpen: false
+      });
+      $("#opener2").click(function() {
+        $("#dialog2").dialog().dialog("open");
+      });
+      $("#dialog3").dialog({
+        autoOpen: false
+      });
+      $("#opener3").click(function() {
+        $("#dialog3").dialog().dialog("open");
+      });
+      $("#dialog4").dialog({
+        autoOpen: false
+      });
+      $("#opener4").click(function() {
+        $("#dialog4").dialog().dialog("open");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div style="overflow:hidden;">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="datepicker"></div>
+          <div class="dialog" id="dialog" title="Add event">
+            <p>Date:</p>
+            <input type="text" id="datepicker2" /><br />
+            <p> Event:</p>
+            <textarea id="event"></textarea><br />
+            <button id="ok">Add</button>
+          </div>
+          <button class="adding" id="opener">Add</button>
+          <div class="dialog" id="dialog2" title="Delete event">
+            <p>Date:</p>
+            <input type="text" id="datepicker3" /><br />
+            <button id="delete">Delete</button>
+          </div>
+          <button id="opener2" class="deleting">Delete</button>
+          <button class="showing" id="show">List</button>
+          <button id="show2" class="change" onClick="show2()">Changing an Event</button>
+          <script>
+            function show2() {
+              document.getElementById('opener3').style.display = 'block';
+              document.getElementById('opener4').style.display = 'block';
+            }
+          </script>
+          <button id="opener3" class="changing">Old Event</button>
+          <div class="dialog" id="dialog3" title="Old event">
+            <!--<h4>Old event</h4> -->
+            <p>Date:</p>
+            <input type="text" id="datepicker4" />
+            <button id="delete2">Ok</button>
+          </div>
+          <button class="changing2" id="opener4">New Event</button>
+          <div class="dialog" id="dialog4" title="New event">
+            <p>Date:</p>
+            <input type="text" id="datepicker5" /><br />
+            <p> Event:</p>
+            <textarea id="event"></textarea><br />
+            <button id="rename">Ok</button>
+          </div>
+          <button class="instruct" id="show3" onClick="show3()">Instruction</button>
+          <script>
+            function show3() {
+              document.getElementById('opener5').style.display = 'block';
+            }
+            /*
+							 function toggle() {
+    var div = document.getElementById('show3');
+    if(this.checked)
+        div.style.display = 'block';
+    else
+        div.style.display = 'none';
+}
+document.getElementById('opener5').onchange = toggle; */
+          </script>
+          <div class="col-md-4" id="opener5">
+            <h1>Jquery Datepicker</h1>
+            <p>This plugin attaches a popup calendar to your input fields or shows an inline calendar for selecting individual dates or date ranges.</p>
+            <ul>
+              <li>Select one date, multiple individual dates.</li>
+              <li>Standard layout, or design your own.</li>
+              <li>Restrict dates to a range or exclude individual dates.</li>
+              <li>Add your own commands.</li>
+              <li>You can add, delete, change events.</li>
+              <li>You can also see the list of all events.</li>
+            </ul>
+            <ol start="1">
+              <li>If you want to add an event, press button "Add", then add your date and event that you want.</li>
+              <li>If you want to delete an event, press button "Delete", then choose the date you want to remove.</li>
+              <li>If you want to see the list of your events, press button "List".</li>
+              <li>If you want to change an event, press button "Changing an Event". Two buttons will pop-up (Old Event, New Event). Press "Old Event" and choose event you want to change. After that, press button "New Event" and type date and event that you want.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
