@@ -16,3 +16,9 @@
               <li>If you want to change an event, press button "Changing an Event". Two buttons will pop-up (Old Event, New Event). Press "Old Event" and choose event you want to change. After that, press button "New Event" and type date and event that you want.</li>
             </ol>
           </div>
+
+           <h2>То что не получилось<h2>
+            <ol start="1">
+            <li>multiDatesPicker не хочет обновлять календарь(refresh не работает, resetDates тоже)</li>
+            <li>Не знаю как реализовать возможность задать функцию для заданного события или глобально для всех сразу которая будет вызываться за заданное количество времени до наступления события</li>
+            </ol>
